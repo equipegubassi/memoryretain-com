@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Memory Retention Crisis: What Adults Over 40 Need to Know | MemoryRetain</title>
+    <meta name="description" content="Millions of adults struggle to retain what they learn. A bold new supplement protocol is helping people lock in memories and preserve cognitive sharpness.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Work Sans',sans-serif;color:#1a1a1a;line-height:1.7;background:#fff}
+        h1,h2,h3,h4{font-family:'Libre Baskerville',Georgia,serif;line-height:1.3}
+        img{max-width:100%;height:auto;display:block}
+        a{color:#dc2626;text-decoration:underline}
+        .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+
+        /* ADVERTISEMENT bar */
+        .ad-bar{background:#111;color:#fff;text-align:center;font-size:11px;padding:6px 10px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600}
+
+        /* Sticky top bar */
+        .sticky-top{position:sticky;top:0;z-index:100;background:#fff;border-bottom:2px solid #dc2626;padding:10px 20px;display:flex;align-items:center;justify-content:space-between}
+        .sticky-top .badge{background:#dc2626;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:3px;text-transform:uppercase;letter-spacing:.5px;text-decoration:none}
+        .sticky-top .top-cta{background:#dc2626;color:#fff;padding:9px 22px;border-radius:5px;font-size:13px;font-weight:700;text-decoration:none;text-transform:uppercase;letter-spacing:.3px;transition:background .2s}
+        .sticky-top .top-cta:hover{background:#b91c1c}
+
+        /* Hero */
+        .hero{padding:44px 0 36px;border-bottom:1px solid #e5e5e5}
+        .hero-grid{display:grid;grid-template-columns:1fr 300px;gap:32px;align-items:start}
+        .hero h1{font-size:32px;margin-bottom:14px;font-weight:700}
+        .hero .byline{font-size:13px;color:#666;margin-bottom:14px}
+        .hero .byline strong{color:#1a1a1a}
+        .hero .lead{font-size:17px;color:#333;line-height:1.8}
+        .aside-box{background:#fef2f2;border:1px solid #fecaca;border-radius:6px;padding:18px;font-size:12px;color:#555;line-height:1.6}
+        .aside-box strong{color:#dc2626;display:block;margin-bottom:6px;font-size:13px;text-transform:uppercase;letter-spacing:.5px}
+
+        /* Sections */
+        .section{padding:40px 0;border-bottom:1px solid #eee}
+        .section h2{font-size:26px;margin-bottom:18px;color:#1a1a1a}
+        .section h3{font-size:20px;margin-bottom:12px}
+        .section p{margin-bottom:14px;font-size:15px;color:#333}
+
+        /* Grid layout */
+        .two-col{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin:20px 0}
+        .col-card{background:#fef2f2;border-left:4px solid #dc2626;padding:20px;border-radius:0 6px 6px 0}
+        .col-card h3{font-size:17px;margin-bottom:8px}
+        .col-card p{font-size:14px;margin-bottom:0}
+
+        /* CTA button */
+        .cta-btn{display:inline-block;background:#dc2626;color:#fff;padding:14px 32px;font-size:15px;font-weight:700;border-radius:5px;text-decoration:none;text-transform:uppercase;letter-spacing:.5px;transition:background .2s;margin:8px 4px}
+        .cta-btn:hover{background:#b91c1c;color:#fff}
+        .cta-center{text-align:center;padding:20px 0}
+
+        /* Ordered steps */
+        .steps-list{counter-reset:steps;list-style:none;padding:0;margin:20px 0}
+        .steps-list li{counter-increment:steps;display:flex;gap:16px;align-items:flex-start;margin-bottom:20px;padding:16px;background:#fafafa;border-radius:6px;border:1px solid #eee}
+        .steps-list li::before{content:counter(steps);background:#dc2626;color:#fff;font-weight:800;font-size:18px;min-width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:50%;flex-shrink:0;font-family:'Work Sans',sans-serif}
+        .steps-list .step-body h4{font-size:16px;font-weight:700;margin-bottom:4px;font-family:'Libre Baskerville',serif}
+        .steps-list .step-body p{font-size:14px;color:#555;margin:0}
+
+        /* Pros/Cons */
+        .pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:20px 0}
+        .pros,.cons{padding:20px;border-radius:6px}
+        .pros{background:#f0fdf4;border:1px solid #bbf7d0}
+        .cons{background:#fef2f2;border:1px solid #fecaca}
+        .pros h3,.cons h3{font-size:17px;margin-bottom:10px}
+        .pros li,.cons li{font-size:14px;margin-bottom:8px;padding-left:4px}
+        .pros li::marker{content:"+ ";color:#16a34a;font-weight:700}
+        .cons li::marker{content:"- ";color:#dc2626;font-weight:700}
+
+        /* FAQ */
+        details{border:1px solid #e5e5e5;border-radius:6px;margin-bottom:10px;overflow:hidden}
+        details summary{padding:14px 18px;font-weight:600;font-size:15px;cursor:pointer;background:#fafafa;list-style:none}
+        details summary::-webkit-details-marker{display:none}
+        details summary::after{content:"+";float:right;font-size:18px;color:#dc2626;font-weight:700}
+        details[open] summary::after{content:"-"}
+        details div{padding:14px 18px;font-size:14px;color:#555;line-height:1.7}
+
+        /* Offer section */
+        .offer-box{display:grid;grid-template-columns:260px 1fr;gap:28px;align-items:center;background:#fef2f2;border:2px solid #dc2626;border-radius:8px;padding:28px;margin:24px 0}
+        .offer-box img{border-radius:8px;width:100%;box-shadow:0 4px 16px rgba(0,0,0,.1)}
+        .offer-box ul{list-style:none;padding:0;margin:12px 0}
+        .offer-box li{font-size:14px;padding:4px 0;padding-left:20px;position:relative}
+        .offer-box li::before{content:"\2713";position:absolute;left:0;color:#dc2626;font-weight:700}
+        .ingredients-list{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+        .ingredients-list span{background:#dc2626;color:#fff;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600}
+
+        /* CTA section */
+        .cta-section{background:#111;color:#fff;padding:40px 0;text-align:center}
+        .cta-section h2{color:#fff;margin-bottom:10px}
+        .cta-section p{color:#ccc;margin-bottom:20px;font-size:15px}
+        .cta-section .cta-btn{background:#dc2626;font-size:17px;padding:16px 40px}
+        .cta-section .cta-btn:hover{background:#ef4444}
+
+        /* Sticky bottom CTA */
+        .sticky-bot{position:fixed;bottom:0;left:0;right:0;z-index:100;background:#111;border-top:3px solid #dc2626;padding:10px 20px;display:flex;align-items:center;justify-content:center;gap:14px}
+        .sticky-bot span{color:#fff;font-size:14px;font-weight:600}
+        .sticky-bot .cta-btn{margin:0;padding:10px 24px;font-size:13px}
+
+        /* Disclaimers */
+        .fda-box{background:#fffbeb;border:1px solid #fde68a;border-radius:6px;padding:16px;margin:16px 0;font-size:12px;color:#92400e;line-height:1.6}
+        .fda-box strong{display:block;margin-bottom:4px;font-size:13px}
+
+        /* Scientific section */
+        .science-section{background:#fafafa;padding:36px 0;border-top:2px solid #dc2626}
+        .science-section h2{text-align:center;margin-bottom:24px}
+        .study-card{background:#fff;border:1px solid #e5e5e5;border-radius:6px;padding:16px;margin-bottom:12px}
+        .study-card h4{font-size:14px;font-weight:700;margin-bottom:4px;font-family:'Work Sans',sans-serif}
+        .study-card p{font-size:13px;color:#555;margin-bottom:6px}
+        .study-card a{font-size:12px;color:#dc2626;font-weight:600}
+
+        /* Footer */
+        .footer{background:#111;color:#888;padding:32px 0;font-size:12px;text-align:center;margin-bottom:60px}
+        .footer a{color:#dc2626}
+        .footer-links{margin-bottom:14px}
+        .footer-links a{margin:0 10px;color:#aaa;text-decoration:none}
+        .footer-links a:hover{color:#fff}
+        .disclaimer-full{max-width:800px;margin:16px auto;font-size:11px;color:#666;line-height:1.7;text-align:left}
+        .disclaimer-full p{margin-bottom:10px}
+
+        @media(max-width:768px){
+            .hero-grid{grid-template-columns:1fr}
+            .two-col,.pros-cons{grid-template-columns:1fr}
+            .offer-box{grid-template-columns:1fr}
+            .offer-box img{max-width:260px;margin:0 auto}
+            .hero h1{font-size:25px}
+            .section h2{font-size:22px}
+            .sticky-bot span{display:none}
+        }
+    </style>
+</head>
+<body>
+
+<!-- ADVERTISEMENT Header Bar -->
+<div class="ad-bar">Advertisement</div>
+
+<!-- Sticky Top Bar -->
+<div class="sticky-top">
+    <div style="display:flex;align-items:center;gap:12px">
+        <span class="badge">Sponsored</span>
+        <span style="font-size:13px;font-weight:600;color:#333">MemoryRetain Editorial</span>
+    </div>
+    <a href="https://www.healthtodaynow.com/neurodyne/?afid=HuJIHfnuJH" class="top-cta" target="_blank" rel="nofollow sponsored noopener">Retain More with NeuroDyne</a>
+</div>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="wrap">
+        <div class="hero-grid">
+            <div>
+                <h1>You Read It, You Studied It, You Understood It &mdash; And Then You Forgot It</h1>
+                <div class="byline">By <strong>Dr. Margaret Chen, Cognitive Health Correspondent</strong> &middot; Published <span id="pub-date"></span></div>
+                <p class="lead">Millions of adults over 40 are silently losing the battle against memory fade. Not the dramatic, diagnosis-worthy kind. The quiet kind &mdash; where names slip away mid-sentence, where a book read last month leaves no trace, where the sharpness you once relied on feels like it belongs to someone else. The retention crisis is real. And until recently, most people had no idea there was something they could do about it.</p>
+            </div>
+            <aside class="aside-box">
+                <strong>Transparency Note</strong>
+                This article contains sponsored content. The publisher may receive compensation for purchases made through links in this article. All editorial opinions remain independent. This content is for informational purposes only and does not constitute medical advice.
+            </aside>
+        </div>
+    </div>
+</section>
+
+<!-- Section 1: The Memory Retention Crisis -->
+<section class="section">
+    <div class="wrap">
+        <h2>The Memory Retention Crisis</h2>
+        <p>Here is the hard truth that nobody talks about at dinner parties: <strong>your ability to retain information is declining every single year</strong>. Not your intelligence. Not your capacity to learn. Your ability to <em>hold onto</em> what you have already learned.</p>
+        <p>According to cognitive researchers, the average adult retains less than 25% of new information after just 48 hours. By the end of a week, that number drops to single digits. You are not imagining it. The book you finished on Sunday feels like a distant rumor by Friday. The name of the person you met at Tuesday's meeting is gone by Wednesday morning.</p>
+        <p>This is not dementia. This is not a disease. This is the natural erosion of memory consolidation &mdash; and it accelerates dramatically after age 40. The neural pathways responsible for encoding and preserving memories become less efficient. Neurotransmitter production slows. The hippocampus, your brain's retention center, begins to shrink at a rate of roughly 0.5% per year.</p>
+        <p>Think about what that means in practical terms. A professional who cannot retain the details of a client meeting. A parent who forgets the instructions the teacher gave last week. A retiree who reads the same article twice because the first time left no impression. This is not carelessness. This is biology working against you &mdash; and most people have no strategy to counter it.</p>
+        <p>The supplement industry has spent decades selling "focus" and "clarity." But focus without retention is like filling a bucket with holes. You can concentrate all you want &mdash; if the information does not consolidate and lock into long-term storage, it is gone.</p>
+        <p><strong>The question is not whether retention fades. The question is whether you are going to do something about it.</strong></p>
+    </div>
+</section>
+
+<!-- Section 2: Why Retention Fades -->
+<section class="section">
+    <div class="wrap">
+        <h2>Why Retention Fades &mdash; And How to Fight Back</h2>
+        <p>Memory retention is not a single process. It requires successful encoding, consolidation, and retrieval. When any of these stages falters, information slips through the cracks. Your brain needs the right biochemical environment to lock new data into place &mdash; adequate neurotransmitters, healthy blood flow to the hippocampus, and protection against the oxidative stress that damages neural connections over time.</p>
+        <p>Two pillars can shore up the entire system:</p>
+        <div class="two-col">
+            <div class="col-card">
+                <h3>Sleep &amp; Recovery Habits</h3>
+                <p>During deep sleep, the brain replays and consolidates the day's memories. Poor sleep quality sabotages this process at its core. Chronic stress floods the hippocampus with cortisol, physically impairing the neurons responsible for long-term storage. Without proper recovery, no amount of studying or repetition will lock information into place.</p>
+            </div>
+            <div class="col-card">
+                <h3>Active Supplementation</h3>
+                <p>Certain natural compounds have been studied for their ability to support the biochemical processes behind memory encoding and retention. Bacopa Monnieri, Ginkgo Biloba, and L-Theanine are among the most researched. They work at the neurotransmitter level &mdash; supporting acetylcholine production, improving cerebral blood flow, and protecting neural pathways from oxidative decay.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 3: NeuroDyne Built for Retention -->
+<section class="section">
+    <div class="wrap">
+        <h2>NeuroDyne: Built for Retention</h2>
+        <p>NeuroDyne is a dietary supplement formulated with a direct purpose: <strong>to support the brain's ability to encode, consolidate, and preserve memories</strong>. It is not a miracle pill. It is not a shortcut. It is a carefully assembled formula of researched ingredients that target the specific biological mechanisms behind memory retention.</p>
+        <p>Each capsule delivers a concentrated blend of Bacopa Monnieri, Ginkgo Biloba, L-Theanine, Panax Ginseng, and Vitamin B Complex &mdash; ingredients that have appeared in peer-reviewed cognitive research for decades. Together, they support the neurotransmitter activity, blood flow, and cellular protection that your aging brain needs to <em>hold onto</em> what it learns.</p>
+        <p>The difference between NeuroDyne and generic "brain boosters" is specificity. Most nootropic products throw a dozen ingredients at the wall and hope something sticks. NeuroDyne targets the three-stage retention process directly: encoding (getting information in), consolidation (locking it down), and retrieval (getting it back when you need it).</p>
+        <p>NeuroDyne does not claim to give you a photographic memory. What it offers is nutritional support for the retention machinery that time and biology have been quietly dismantling.</p>
+        <div class="cta-center">
+            <a href="https://www.healthtodaynow.com/neurodyne/?afid=HuJIHfnuJH" class="cta-btn" target="_blank" rel="nofollow sponsored noopener">Retain More with NeuroDyne</a>
+            <a href="https://www.healthtodaynow.com/neurodyne/?afid=HuJIHfnuJH" class="cta-btn" style="background:#111" target="_blank" rel="nofollow sponsored noopener">Lock In Your Memory</a>
+        </div>
+    </div>
+</section>
+
+<!-- Section 4: The Retention Protocol -->
+<section class="section">
+    <div class="wrap">
+        <h2>The Retention Protocol</h2>
+        <p>Supplementation alone is not a strategy. It is one weapon in a larger arsenal. Here is the four-step protocol that cognitive health experts recommend for people serious about preserving what they learn:</p>
+        <ol class="steps-list">
+            <li>
+                <div class="step-body">
+                    <h4>NeuroDyne Each Morning</h4>
+                    <p>Take one serving of NeuroDyne with breakfast. The Bacopa and Ginkgo begin supporting acetylcholine production and cerebral blood flow within the first hour, priming your brain for the day's encoding demands.</p>
+                </div>
+            </li>
+            <li>
+                <div class="step-body">
+                    <h4>Hydration + Active Recall Practice</h4>
+                    <p>Dehydration impairs cognitive function faster than most people realize. Combine steady water intake with active recall exercises &mdash; close the book and try to reconstruct what you read. This forces the hippocampus to strengthen retrieval pathways rather than passively re-absorbing text.</p>
+                </div>
+            </li>
+            <li>
+                <div class="step-body">
+                    <h4>Evening Consolidation Review</h4>
+                    <p>Before bed, spend 10 minutes reviewing the most important things you learned that day. Write them down or speak them aloud. This pre-sleep review primes the brain for overnight memory consolidation during slow-wave and REM sleep cycles.</p>
+                </div>
+            </li>
+            <li>
+                <div class="step-body">
+                    <h4>Regular Sleep for Memory Encoding</h4>
+                    <p>Seven to nine hours of uninterrupted sleep is non-negotiable for memory retention. During deep sleep, the brain physically transfers short-term memories from the hippocampus to the neocortex for long-term storage. Cut your sleep short, and you cut your retention in half.</p>
+                </div>
+            </li>
+        </ol>
+    </div>
+</section>
+
+<!-- Section 5: Straight Talk -->
+<section class="section">
+    <div class="wrap">
+        <h2>Straight Talk: What Works &amp; What Doesn't</h2>
+        <p>Not every cognitive supplement delivers. Not every lifestyle hack moves the needle. Here is an honest breakdown:</p>
+        <div class="pros-cons">
+            <div class="pros">
+                <h3>What Works</h3>
+                <ul>
+                    <li>Bacopa Monnieri has strong clinical evidence for memory encoding support</li>
+                    <li>Consistent daily supplementation compounds benefits over 8-12 weeks</li>
+                    <li>Active recall practice forces stronger neural pathway formation</li>
+                    <li>Sleep-first approach respects the biology of consolidation</li>
+                    <li>Combined supplement + behavioral protocol outperforms either alone</li>
+                </ul>
+            </div>
+            <div class="cons">
+                <h3>What Doesn't</h3>
+                <ul>
+                    <li>One-time megadose supplements with no sustained regimen</li>
+                    <li>Passive re-reading without active engagement</li>
+                    <li>Caffeine-only "focus" products that ignore retention entirely</li>
+                    <li>Expecting overnight results from any supplement</li>
+                    <li>Ignoring sleep while piling on nootropics</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 6: FAQ -->
+<section class="section">
+    <div class="wrap">
+        <h2>Your Questions, Answered</h2>
+        <details>
+            <summary>How long before I notice improved retention?</summary>
+            <div>Most users report noticeable improvements in recall and information retention within 4 to 8 weeks of consistent daily use. Bacopa Monnieri, the primary active ingredient, has been shown in clinical studies to produce measurable cognitive benefits at the 8-12 week mark. Patience and consistency are key.</div>
+        </details>
+        <details>
+            <summary>Is NeuroDyne safe to take with prescription medications?</summary>
+            <div>NeuroDyne contains natural botanical ingredients that are generally well-tolerated. However, we strongly recommend consulting with your physician or pharmacist before combining any supplement with prescription medications, especially blood thinners, antidepressants, or blood pressure medications.</div>
+        </details>
+        <details>
+            <summary>Can NeuroDyne help with age-related memory decline?</summary>
+            <div>NeuroDyne is formulated with ingredients that have been studied in the context of age-associated memory impairment (AAMI). While it is not a treatment or cure for any medical condition, the ingredients support the biological processes &mdash; neurotransmitter production, cerebral blood flow, and antioxidant protection &mdash; that underpin memory retention.</div>
+        </details>
+        <details>
+            <summary>What makes NeuroDyne different from generic brain supplements?</summary>
+            <div>Most mass-market brain supplements rely on a single ingredient at sub-therapeutic doses. NeuroDyne combines five clinically-researched ingredients at meaningful amounts, specifically targeting the retention phase of memory &mdash; encoding, consolidation, and retrieval &mdash; rather than just short-term alertness.</div>
+        </details>
+        <details>
+            <summary>Is there a money-back guarantee?</summary>
+            <div>Yes. NeuroDyne comes with a satisfaction guarantee. If you are not experiencing the retention support you expected, contact customer service within the guarantee period for a full refund. Details are provided at checkout.</div>
+        </details>
+        <details>
+            <summary>How should I take NeuroDyne for best results?</summary>
+            <div>Take one serving with breakfast each morning. Consistency is critical &mdash; the ingredients in NeuroDyne build up in your system over time, supporting sustained improvements in memory encoding and retention. For optimal results, combine daily supplementation with the full Retention Protocol outlined above: active recall practice, evening review sessions, and prioritized sleep.</div>
+        </details>
+        <details>
+            <summary>Who is NeuroDyne designed for?</summary>
+            <div>NeuroDyne was formulated for adults who notice that their ability to retain new information is not what it used to be. Whether you are a working professional trying to keep up with meetings and deadlines, a lifelong learner who wants to actually remember what you read, or a retiree looking to preserve mental sharpness &mdash; NeuroDyne is built for anyone serious about holding onto what they learn.</div>
+        </details>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="wrap">
+        <h2>Start Retaining More Today</h2>
+        <p>Your memories are worth preserving. Every conversation, every book, every important moment deserves to stay with you &mdash; not as a vague impression, but as a crisp, retrievable record that you can access whenever you need it. NeuroDyne was built for exactly that purpose.</p>
+        <a href="https://www.healthtodaynow.com/neurodyne/?afid=HuJIHfnuJH" class="cta-btn" target="_blank" rel="nofollow sponsored noopener">Get NeuroDyne &mdash; Start Retaining</a>
+    </div>
+</section>
+
+<!-- Offer Section -->
+<section class="section">
+    <div class="wrap">
+        <div class="offer-box">
+            <img src="images/7a25ba7ecd32f75c39378b1043b4.jpg" alt="NeuroDyne Memory Retention Supplement" width="260" height="260">
+            <div>
+                <h3>NeuroDyne &mdash; Memory Retention Formula</h3>
+                <p style="font-size:14px;color:#555">A targeted blend of researched botanicals designed to support how your brain encodes, consolidates, and preserves information.</p>
+                <ul>
+                    <li>Supports long-term memory encoding and consolidation</li>
+                    <li>Promotes healthy cerebral blood flow</li>
+                    <li>Provides antioxidant neuroprotection</li>
+                    <li>Enhances acetylcholine and neurotransmitter activity</li>
+                    <li>Manufactured in a GMP-certified facility</li>
+                </ul>
+
+                <p style="font-size:13px;color:#666;margin-top:8px"><em>Formulated in a GMP-certified, FDA-registered facility in the United States. Each batch is third-party tested for purity and potency.</em></p>
+                <strong style="font-size:13px;color:#1a1a1a;margin-top:10px;display:block">Key Ingredients:</strong>
+                <div class="ingredients-list">
+                    <span>Ginkgo Biloba</span>
+                    <span>Bacopa Monnieri</span>
+                    <span>L-Theanine</span>
+                    <span>Panax Ginseng</span>
+                    <span>Vitamin B Complex</span>
+                </div>
+                <a href="https://www.healthtodaynow.com/neurodyne/?afid=HuJIHfnuJH" class="cta-btn" style="margin-top:12px" target="_blank" rel="nofollow sponsored noopener">Lock In Your Memory</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FDA Disclaimer Box 1 -->
+<section class="section" style="padding:20px 0">
+    <div class="wrap">
+        <div class="fda-box">
+            <strong>FDA Disclaimer</strong>
+            These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. The information provided on this page is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider before starting any new dietary supplement.
+        </div>
+    </div>
+</section>
+
+<!-- FDA Disclaimer Box 2 -->
+<section class="section" style="padding:0 0 20px">
+    <div class="wrap">
+        <div class="fda-box" style="background:#fff7ed;border-color:#fdba74">
+            <strong>Individual Results Disclaimer</strong>
+            Individual results may vary. The testimonials and examples used are not intended to represent or guarantee that anyone will achieve the same or similar results. Each individual's experience with dietary supplements depends on many factors, including but not limited to their baseline health, age, diet, exercise habits, and genetic predisposition. This product should be used as part of a healthy lifestyle.
+        </div>
+    </div>
+</section>
+
+<!-- Scientific Substantiation -->
+<section class="science-section">
+    <div class="wrap">
+        <h2>Scientific Substantiation</h2>
+        <p style="text-align:center;font-size:13px;color:#666;margin-bottom:24px">The studies below were conducted on individual ingredients, not on the NeuroDyne product itself. These references are provided for informational purposes only.</p>
+
+        <div class="study-card">
+            <h4>Bacopa monnieri &amp; Working Memory</h4>
+            <p>Stough C, et al. (2008). Examined the chronic effects of an extract of Bacopa monnieri (Keenmind) on cognitive function, reporting significant improvements in working memory and attention.</p>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/18683852/" target="_blank" rel="noopener">PubMed: 18683852</a>
+        </div>
+
+        <div class="study-card">
+            <h4>Chronic Bacopa &amp; Cognitive Function</h4>
+            <p>Stough C, et al. (2001). A randomized, double-blind, placebo-controlled study showing that chronic Bacopa monnieri supplementation produced significant effects on cognitive function in healthy older adults.</p>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/11498727/" target="_blank" rel="noopener">PubMed: 11498727</a>
+        </div>
+
+        <div class="study-card">
+            <h4>Standardized Bacopa in Age-Associated Memory Impairment</h4>
+            <p>Raghav S, et al. (2006). A clinical trial of a standardized Bacopa monnieri extract in subjects with age-associated memory impairment (AAMI), demonstrating significant improvements in multiple memory parameters.</p>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2915594/" target="_blank" rel="noopener">PMC: PMC2915594</a>
+        </div>
+
+        <div class="study-card">
+            <h4>L-Theanine + Caffeine &amp; Attention</h4>
+            <p>Haskell CF, et al. (2008). Investigated the acute effects of L-theanine, caffeine, and their combination on cognition and mood, finding that the combination improved attention and task-switching accuracy.</p>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/18006208/" target="_blank" rel="noopener">PubMed: 18006208</a>
+        </div>
+
+        <div class="study-card">
+            <h4>L-Theanine + Caffeine &amp; Attention Switching</h4>
+            <p>Owen GN, et al. (2008). Demonstrated that the combination of L-theanine and caffeine improved both speed and accuracy of performance on an attention-switching task, and reduced susceptibility to distracting information.</p>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/18681988/" target="_blank" rel="noopener">PubMed: 18681988</a>
+        </div>
+
+        <div class="study-card">
+            <h4>Phosphatidylserine in Age-Associated Memory Impairment</h4>
+            <p>Crook TH, et al. (1991). A multicenter, randomized, double-blind, placebo-controlled trial showing that phosphatidylserine supplementation improved cognitive performance in subjects with age-associated memory impairment.</p>
+            <a href="https://www.neurology.org/doi/10.1212/WNL.41.5.644" target="_blank" rel="noopener">Neurology: 41(5):644</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="wrap">
+        <div class="footer-links">
+            <a href="/privacy.html">Privacy Policy</a>
+            <a href="/terms.html">Terms of Service</a>
+            <a href="mailto:support@memoryretain.com">Contact</a>
+        </div>
+
+        <div class="disclaimer-full">
+            <p><strong style="color:#aaa">Informational &amp; Marketing Disclosure:</strong> This page is an advertisement and is published for informational and marketing purposes. The content presented here reflects the opinions of the publisher and is not intended as medical advice. Always consult a licensed healthcare professional before making changes to your health regimen.</p>
+            <p><strong style="color:#aaa">FDA Notice:</strong> These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Results may vary from person to person. The information on this website is not a substitute for professional medical advice.</p>
+            <p><strong style="color:#aaa">Marketplace Disclosure:</strong> This website is a digital marketplace and advertising platform. The owner of this website has a financial relationship with the products and services advertised and receives compensation when a qualified referral is made. This compensation does not influence editorial content but should be considered when evaluating product recommendations.</p>
+            <p><strong style="color:#aaa">Results &amp; Disclaimer Clause:</strong> Individual results may vary and are not guaranteed. Any photos of individuals used on this website may be of models and not actual users. Testimonials and reviews displayed may be fictionalized or edited for clarity. This website and the products mentioned herein are advertising content. The publisher provides a service where consumers can obtain and compare information.</p>
+        </div>
+
+        <p style="margin-top:18px;color:#555">&copy; <span id="copy-year"></span> MemoryRetain. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- Sticky Bottom CTA Bar -->
+<div class="sticky-bot">
+    <span>Ready to lock in your memory?</span>
+    <a href="https://www.healthtodaynow.com/neurodyne/?afid=HuJIHfnuJH" class="cta-btn" target="_blank" rel="nofollow sponsored noopener">Get NeuroDyne &mdash; Start Retaining</a>
+</div>
+
+<!-- Dynamic Date Script -->
+<script>
+(function(){
+    var now = new Date();
+    var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    var day = now.getDate();
+    var month = months[now.getMonth()];
+    var year = now.getFullYear();
+    var formatted = month + " " + day + ", " + year;
+    var el = document.getElementById("pub-date");
+    if(el) el.textContent = formatted;
+    var cy = document.getElementById("copy-year");
+    if(cy) cy.textContent = year;
+})();
+</script>
+
+</body>
+</html>
